@@ -20,7 +20,7 @@ body {
   content: "";
   position: absolute;
   width: 40px;
-  negative: 40px;
+  height: 40px;
   border: inherit;
   transition: all 0.5s;
 }
