@@ -1,0 +1,35 @@
+.button {
+  text-decoration: none;
+  font-size: 25px;
+  color: #1febb6;
+  padding: 20px 50px;
+  border: 3px solid #1febb6;
+  position: relative;
+  margin-left: 20px;
+}
+
+.button:before,
+.button:after {
+  content: "";
+  position: absolute;
+  width: 40px;
+  negative: 40px;
+  border: inherit;
+  transition: all 0.5s;
+}
+.button:before {
+  top: -15px;
+  left: -15px;
+  border-width: 3px 0 0 3px;
+}
+
+.button:after {
+  bottom: -15px;
+  right: -15px;
+  border-width: 0 3px 3px 0;
+}
+.button:hover::before,
+.button:hover::after {
+  width: calc(100% + 27px);
+  height: calc(100% +27px);
+}
