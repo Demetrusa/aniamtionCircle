@@ -1,3 +1,9 @@
+body {
+  background: black;
+}
+.spinner {
+  margin-bottom: 200px;
+}
 .button {
   text-decoration: none;
   font-size: 25px;
@@ -5,6 +11,8 @@
   padding: 20px 50px;
   border: 3px solid #1febb6;
   position: relative;
+  margin-left: 45%;
+  margin-top: 200px;
 }
 
 .button:before,
@@ -32,12 +40,13 @@
   width: calc(100% + 27px);
   height: calc(100% +27px);
 }
-
-.spinner {
+/* spiner css */
+/* .spinner {
   position: relative;
   width: 80px;
   height: 80px;
   border-radius: 50%;
+  margin-bottom: 200px;
 }
 .spinner::before,
 .spinner::after {
@@ -63,4 +72,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
